@@ -92,7 +92,7 @@ function signQuery (options) {
   options.message = queryStringToSign(options)
   return hmacSha1(options)
 }
-module.exports.signQuery= signQuery
+module.exports.signQuery = signQuery
 
 /**
  * Return a string for sign() with the given `options`.
@@ -123,7 +123,7 @@ function stringToSign (options) {
     ]
   return r.join('\n')
 }
-module.exports.queryStringToSign = stringToSign
+module.exports.stringToSign = stringToSign
 
 /**
  * Return a string for sign() with the given `options`, but is meant exclusively
@@ -193,7 +193,7 @@ function canonicalizeResource (resource) {
 
   Object.keys(url.query).forEach(function(key){
     if (!~keys.indexOf(key)) return
-    var val = '' == url.query[key] ? '' : '=' + encodeURIComponent(url.query[key])
+    var val = '' == url.query[key] ? '' : '=' + url.query[key]
     buf.push(key + val)
   })
 

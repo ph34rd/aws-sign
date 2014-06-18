@@ -2,9 +2,10 @@
   "author": "Mikeal Rogers <mikeal.rogers@gmail.com> (http://www.futurealoof.com)",
   "name": "aws-sign2",
   "description": "AWS signing. Originally pulled from LearnBoost/knox, maintained as vendor in request, now a standalone module.",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "repository": {
-    "url": "https://github.com/mikeal/aws-sign"
+    "type": "git",
+    "url": "https://github.com/ph34rd/aws-sign.git"
   },
   "license": "Apache, Version 2.0",
   "main": "index.js",
